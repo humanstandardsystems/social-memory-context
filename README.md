@@ -16,15 +16,27 @@ Designed to plug into [Human Standard (hs)](https://github.com/humanstandardsyst
 
 Auto-syncs on session start (silent `git pull`). Auto-pushes on `/done` (via hs hook).
 
-## Install (3 steps)
+## Install
 
 ```bash
-git clone git@github.com:humanstandardsystems/social-memory-context.git
-cd social-memory-context
-bash install.sh
+# 1. Clone to the canonical sources location
+git clone https://github.com/humanstandardsystems/social-memory-context.git ~/.claude/sources/social-memory-context
+
+# 2. Install the brain skill globally
+bash ~/.claude/sources/social-memory-context/install.sh
 ```
 
 That copies the brain skill into `~/.claude/skills/brain/`. No deps, no scripts.
+
+## Updating
+
+```bash
+bash ~/.claude/sources/social-memory-context/update.sh
+```
+
+## Uninstalling
+
+See [UNINSTALL.md](UNINSTALL.md) — `bash ~/.claude/sources/social-memory-context/uninstall.sh` removes the skill while preserving your brain repos.
 
 ## First use
 
