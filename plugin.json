@@ -1,0 +1,6 @@
+{
+  "name": "brain",
+  "version": "0.1.0",
+  "description": "Shared, project-scoped memory for small teams — records decisions, todos, glossary, and context in a git-backed brain.",
+  "priority": 50
+}
